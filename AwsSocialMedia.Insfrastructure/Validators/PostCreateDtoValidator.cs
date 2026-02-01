@@ -3,9 +3,9 @@
     using Core.DTOs;
     using FluentValidation;
 
-    public class PostDtoValidator : AbstractValidator<PostCreateDto>
+    public class PostCreateDtoValidator : AbstractValidator<PostCreateDto>
     {
-        public PostDtoValidator()
+        public PostCreateDtoValidator()
         {
             RuleFor(post => post.UserId)
                 .NotEmpty().WithMessage("UserId es requerido")

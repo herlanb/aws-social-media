@@ -40,5 +40,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AwsSocialMedia.Api.Controllers.PostController",
+    "Method": "Put",
+    "RelativePath": "api/Post/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "postDto",
+        "Type": "AwsSocialMedia.Core.DTOs.PostUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AwsSocialMedia.Api.Controllers.PostController",
+    "Method": "Delete",
+    "RelativePath": "api/Post/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

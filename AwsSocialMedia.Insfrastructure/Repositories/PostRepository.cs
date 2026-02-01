@@ -1,9 +1,10 @@
 ﻿namespace AwsSocialMedia.Insfrastructure.Repositories
 {
-    using Data;
     using Core.Entities;
     using Core.Interfaces;
+    using Data;
     using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Hosting;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
@@ -42,6 +43,26 @@
         {
             _context.Posts.Add(post);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> UpdatePost(Post post)
+        {
+            var currentPost = await GetPost(post.PostId);
+            currentPost.Description = post.Description;
+            currentPost.Image = post.Image;
+
+            int rows = await _context.SaveChangesAsync();
+            return rows > 0;
+        }
+
+        public async Task<bool> DeletePost(int id)
+        {
+            var currentPost = await GetPost(id);
+
+            _context.Posts.Remove(currentPost);
+
+            int rows = await _context.SaveChangesAsync();
+            return rows > 0;
         }
     }
 }

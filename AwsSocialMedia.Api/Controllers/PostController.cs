@@ -32,6 +32,12 @@
         public async Task<IActionResult> GetPost(int id)
         {
             var post = await _postRepository.GetPost(id);
+
+            if (post == null)
+            {
+                return NotFound(new { Message = $"Post con ID {id} no encontrado" });
+            }
+
             var postDto = _mapper.Map<PostGetDto>(post);
 
             return Ok(postDto);
@@ -46,6 +52,27 @@
 
             await _postRepository.InsertPost(post);
             return Ok(post);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, PostUpdateDto postDto)
+        {
+            if (id != postDto.PostId)
+            {
+                return BadRequest(new { Message = "El ID de la ruta no coincide con el del body" });
+            }
+
+            var post = _mapper.Map<Post>(postDto);
+
+            var result = await _postRepository.UpdatePost(post);
+            return Ok(result);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _postRepository.DeletePost(id);
+            return Ok(result);
         }
     }
 }

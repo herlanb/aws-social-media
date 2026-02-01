@@ -11,6 +11,7 @@
             CreateMap<Post, PostGetDto>();
             CreateMap<PostGetDto, Post>();
             CreateMap<PostCreateDto, Post>();
+            CreateMap<PostUpdateDto, Post>();
         }
     }
 }
