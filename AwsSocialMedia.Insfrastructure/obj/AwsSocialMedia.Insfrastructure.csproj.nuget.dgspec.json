@@ -48,6 +48,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -144,6 +154,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": {
+              "target": "Package",
+              "version": "[1.5.0, )"
             }
           },
           "imports": [

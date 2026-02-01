@@ -1,6 +1,6 @@
 ﻿namespace AwsSocialMedia.Core.DTOs
 {
-    public class PostDto
+    public class PostGetDto
     {
         public int PostId { get; set; }
 

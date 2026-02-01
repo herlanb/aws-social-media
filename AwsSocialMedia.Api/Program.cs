@@ -1,7 +1,10 @@
 using AwsSocialMedia.Core.Interfaces;
 using AwsSocialMedia.Insfrastructure.Data;
 using AwsSocialMedia.Insfrastructure.Repositories;
+using AwsSocialMedia.Insfrastructure.Validators;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,10 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler =
             System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
     });
+
+builder.Services.AddValidatorsFromAssemblyContaining<PostDtoValidator>();
+
+builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddDbContext<AwsSocialMediaDbContext>(options =>
     options.UseSqlServer( builder.Configuration.GetConnectionString("SocialMediaCnx") )

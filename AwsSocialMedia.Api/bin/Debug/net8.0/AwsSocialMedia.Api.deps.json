@@ -76,6 +76,26 @@
           }
         }
       },
+      "FluentValidation/12.0.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/12.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -632,6 +652,28 @@
           }
         }
       },
+      "SharpGrip.FluentValidation.AutoValidation.Mvc/1.5.0": {
+        "dependencies": {
+          "SharpGrip.FluentValidation.AutoValidation.Shared": "1.5.0"
+        },
+        "runtime": {
+          "lib/net8.0/SharpGrip.FluentValidation.AutoValidation.Mvc.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SharpGrip.FluentValidation.AutoValidation.Shared/1.5.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/SharpGrip.FluentValidation.AutoValidation.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -919,6 +961,10 @@
         }
       },
       "AwsSocialMedia.Core/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "12.0.0"
+        },
         "runtime": {
           "AwsSocialMedia.Core.dll": {
             "assemblyVersion": "1.0.0",
@@ -930,7 +976,8 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "AwsSocialMedia.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0"
         },
         "runtime": {
           "AwsSocialMedia.Insfrastructure.dll": {
@@ -974,6 +1021,20 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "FluentValidation/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "path": "fluentvalidation/12.0.0",
+      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B28fBRL1UjhGsBC8fwV6YBZosh+SiU1FxdD7l7p5dGPgRlVI7UnM+Lgzmg+unZtV1Zxzpaw96UY2MYfMaAd8cg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/12.0.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1268,6 +1329,20 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "SharpGrip.FluentValidation.AutoValidation.Mvc/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gqzRTuyZSn8eGbOg0OVQIY9mHCW78WMq1sLg+tqTDQVZJC/clbi9g9AV0ErZj1PZfuGIqG35cBo32Px0MVW5Ow==",
+      "path": "sharpgrip.fluentvalidation.autovalidation.mvc/1.5.0",
+      "hashPath": "sharpgrip.fluentvalidation.autovalidation.mvc.1.5.0.nupkg.sha512"
+    },
+    "SharpGrip.FluentValidation.AutoValidation.Shared/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vTZhTWRrTk051yXEOmkU9jMbHuckcBTW7P/3o1SX7R7arJ+JhTNinVeECkLJRcliW6qMto5aYRI2GEOP+DR4Dg==",
+      "path": "sharpgrip.fluentvalidation.autovalidation.shared/1.5.0",
+      "hashPath": "sharpgrip.fluentvalidation.autovalidation.shared.1.5.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.6.2": {
       "type": "package",

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CEcIJ6bBC/U=",
+  "dgSpecHash": "b9HxEa7Hxdc=",
   "success": true,
   "projectFilePath": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Herlan\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\Herlan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
+    "C:\\Users\\Herlan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\Herlan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.23\\microsoft.windowsdesktop.app.ref.8.0.23.nupkg.sha512",
     "C:\\Users\\Herlan\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.23\\microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
     "C:\\Users\\Herlan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.23\\microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"

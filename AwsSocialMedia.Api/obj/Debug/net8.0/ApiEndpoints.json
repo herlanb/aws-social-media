@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "postDto",
-        "Type": "AwsSocialMedia.Core.DTOs.PostDto",
+        "Type": "AwsSocialMedia.Core.DTOs.PostCreateDto",
         "IsRequired": true
       }
     ],

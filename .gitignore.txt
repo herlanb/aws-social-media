@@ -32,3 +32,24 @@ x86/
 *.mdf
 *.ldf
 *.ndf
+
+## Build results
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+**/bin/
+**/obj/
+
+## User files
+*.user
+*.suo
+*.cache
+*.vsidx
+
+## Logs
+*.log

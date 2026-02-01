@@ -8,8 +8,9 @@
     {
         public AutoMapperProfile()
         {
-            CreateMap<Post, PostDto>();
-            CreateMap<PostDto, Post>();
+            CreateMap<Post, PostGetDto>();
+            CreateMap<PostGetDto, Post>();
+            CreateMap<PostCreateDto, Post>();
         }
     }
 }

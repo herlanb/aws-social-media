@@ -23,7 +23,7 @@
         public async Task<IActionResult> GetPosts()
         {
             var posts = await _postRepository.GetPosts();
-            var postsDto = _mapper.Map<IEnumerable<PostDto>>(posts);
+            var postsDto = _mapper.Map<IEnumerable<PostGetDto>>(posts);
 
             return Ok(postsDto);
         }
@@ -32,15 +32,17 @@
         public async Task<IActionResult> GetPost(int id)
         {
             var post = await _postRepository.GetPost(id);
-            var postDto = _mapper.Map<PostDto>(post);
+            var postDto = _mapper.Map<PostGetDto>(post);
 
             return Ok(postDto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(PostDto postDto)
+        public async Task<IActionResult> Post(PostCreateDto postDto)
         {
             var post = _mapper.Map<Post>(postDto);
+
+            post.Date = DateTime.Now;
 
             await _postRepository.InsertPost(post);
             return Ok(post);
