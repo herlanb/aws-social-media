@@ -1,0 +1,11 @@
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\bin\Debug\net8.0\AwsSocialMedia.Core.deps.json
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\bin\Debug\net8.0\AwsSocialMedia.Core.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\bin\Debug\net8.0\AwsSocialMedia.Core.pdb
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.AssemblyInfoInputs.cache
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.AssemblyInfo.cs
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.csproj.CoreCompileInputs.cache
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\refint\AwsSocialMedia.Core.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.pdb
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\ref\AwsSocialMedia.Core.dll

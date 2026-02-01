@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AwsSocialMedia.Api/AwsSocialMedia.Api.csproj" />
+  <Project Path="AwsSocialMedia.Core/AwsSocialMedia.Core.csproj" />
+  <Project Path="AwsSocialMedia.Insfrastructure/AwsSocialMedia.Insfrastructure.csproj" />
+</Solution>

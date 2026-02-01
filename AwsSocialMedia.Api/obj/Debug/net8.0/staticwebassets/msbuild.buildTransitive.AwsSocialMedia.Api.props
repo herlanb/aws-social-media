@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AwsSocialMedia.Api.props" />
+</Project>

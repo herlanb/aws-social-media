@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C#\\aws\\AwsSocialMedia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.insfrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|solutionrelative:awssocialmedia.insfrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|solutionrelative:awssocialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
+              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:29:43.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "RelativeToolTip": "AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:12:31.107Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Insfrastructure.deps.json
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Insfrastructure.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Insfrastructure.pdb
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Core.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Core.pdb
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.csproj.AssemblyReference.cache
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.AssemblyInfoInputs.cache
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.AssemblyInfo.cs
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.csproj.CoreCompileInputs.cache
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocia.303EB8EF.Up2Date
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\refint\AwsSocialMedia.Insfrastructure.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.pdb
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\ref\AwsSocialMedia.Insfrastructure.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Insfrastructure.runtimeconfig.json
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.genruntimeconfig.cache
