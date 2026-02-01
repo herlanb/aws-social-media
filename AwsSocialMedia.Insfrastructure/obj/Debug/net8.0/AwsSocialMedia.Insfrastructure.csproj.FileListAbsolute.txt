@@ -15,3 +15,4 @@ E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSoci
 E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\ref\AwsSocialMedia.Insfrastructure.dll
 E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\bin\Debug\net8.0\AwsSocialMedia.Insfrastructure.runtimeconfig.json
 E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.genruntimeconfig.cache
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Insfrastructure\obj\Debug\net8.0\AwsSocialMedia.Insfrastructure.sourcelink.json

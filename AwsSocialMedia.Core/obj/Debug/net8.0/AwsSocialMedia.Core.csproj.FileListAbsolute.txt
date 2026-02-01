@@ -9,3 +9,4 @@ E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Cor
 E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\refint\AwsSocialMedia.Core.dll
 E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.pdb
 E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\ref\AwsSocialMedia.Core.dll
+E:\C#\aws\AwsSocialMedia\AwsSocialMedia.Core\obj\Debug\net8.0\AwsSocialMedia.Core.sourcelink.json

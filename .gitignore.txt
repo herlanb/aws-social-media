@@ -7,6 +7,8 @@ bin/
 obj/
 [Dd]ebug/
 [Rr]elease/
+x64/
+x86/
 
 ## User-specific files
 *.suo
@@ -21,17 +23,12 @@ obj/
 
 ## Others
 *.log
+*.cache
+*.vsidx
 *.vspscc
 *.vssscc
-.builds
-*.pidb
-*.svclog
-*.scc
 
 ## SQL Server files
 *.mdf
 *.ldf
 *.ndf
-
-## Application settings (opcional, dependiendo de tu caso)
-appsettings.Development.json
