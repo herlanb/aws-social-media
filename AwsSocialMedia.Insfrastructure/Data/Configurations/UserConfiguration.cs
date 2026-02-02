@@ -10,9 +10,9 @@
         {
             entity.ToTable("Usuario");
 
-            entity.HasKey(e => e.UserId);
+            entity.HasKey(e => e.Id);
 
-            entity.Property(e => e.UserId)
+            entity.Property(e => e.Id)
                 .HasColumnName("IdUsuario");
 
             entity.Property(e => e.FirstName)

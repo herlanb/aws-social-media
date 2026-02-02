@@ -6,28 +6,26 @@
 
     public class PostService : IPostService
     {
-        private readonly IPostRepository _postRepository;
-        private readonly IUserRepository _userRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public PostService(IPostRepository postRepository, IUserRepository userRepository)
+        public PostService(IUnitOfWork unitOfWork)
         {
-            _postRepository = postRepository;
-            _userRepository = userRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public Task<IEnumerable<Post>> GetPosts()
         {
-            return _postRepository.GetPosts();
+            return _unitOfWork.PostRepository.GetAll();
         }
 
         public Task<Post> GetPost(int id)
         {
-            return _postRepository.GetPost(id);
+            return _unitOfWork.PostRepository.GetById(id);
         }
 
         public async Task InsertPost(Post post)
         {
-            _ = await _userRepository.GetUser(post.UserId)
+            _ = await _unitOfWork.UserRepository.GetById(post.UserId)
                    ?? throw new Exception("El usuario no existe.");
 
             if (post.Description.Contains("sexo"))
@@ -37,17 +35,19 @@
 
             post.Date = DateTime.Now;
 
-            await _postRepository.InsertPost(post);
+            await _unitOfWork.PostRepository.Add(post);
         }
 
         public async Task<bool> UpdatePost(Post post)
         {
-            return await _postRepository.UpdatePost(post);
+            await _unitOfWork.PostRepository.Update(post);
+            return true;
         }
 
-        public Task<bool> DeletePost(int id)
+        public async Task<bool> DeletePost(int id)
         {
-            return _postRepository.DeletePost(id);
+            await _unitOfWork.PostRepository.Delete(id);
+            return true;
         }
     }
 }

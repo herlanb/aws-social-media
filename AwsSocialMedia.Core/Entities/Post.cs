@@ -4,10 +4,8 @@
     using System.Collections.Generic;
     using System.Text.Json.Serialization;
 
-    public partial class Post
+    public partial class Post : BaseEntity
     {
-        public int PostId { get; set; }
-
         public int UserId { get; set; }
 
         public DateTime Date { get; set; }

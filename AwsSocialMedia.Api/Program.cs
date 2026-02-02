@@ -24,7 +24,7 @@ builder.Services.AddValidatorsFromAssemblyContaining<PostUpdateDtoValidator>();
 builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddDbContext<AwsSocialMediaDbContext>(options =>
-    options.UseSqlServer( builder.Configuration.GetConnectionString("SocialMediaCnx") )
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SocialMediaCnx"))
 );
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -33,9 +33,10 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<IPostService, PostService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
 var app = builder.Build();
 
