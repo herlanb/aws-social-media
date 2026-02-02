@@ -4,7 +4,6 @@
     using Core.Interfaces;
     using Data;
     using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Hosting;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
@@ -35,7 +34,7 @@
                         .Take(20))
                     .ThenInclude(c => c.User)
                 .AsNoTracking()
-                .AsSplitQuery()   
+                .AsSplitQuery()
                 .FirstOrDefaultAsync(p => p.PostId == id);
         }
 

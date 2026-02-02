@@ -1,6 +1,7 @@
 ﻿namespace AwsSocialMedia.Api.Controllers
 {
     using AutoMapper;
+    using Response;
     using Core.DTOs;
     using Core.Entities;
     using Core.Interfaces;
@@ -10,28 +11,29 @@
     [ApiController]
     public class PostController : ControllerBase
     {
-        private readonly IPostRepository _postRepository;
+        private readonly IPostService _postService;
         private readonly IMapper _mapper;  
 
-        public PostController(IPostRepository postRepository, IMapper mapper)
+        public PostController(IPostService postService, IMapper mapper)
         {
-            _postRepository = postRepository;
+            _postService = postService;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetPosts()
         {
-            var posts = await _postRepository.GetPosts();
+            var posts = await _postService.GetPosts();
             var postsDto = _mapper.Map<IEnumerable<PostGetDto>>(posts);
 
-            return Ok(postsDto);
+            var response = new ApiResponse<IEnumerable<PostGetDto>>(postsDto);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPost(int id)
         {
-            var post = await _postRepository.GetPost(id);
+            var post = await _postService.GetPost(id);
 
             if (post == null)
             {
@@ -40,7 +42,8 @@
 
             var postDto = _mapper.Map<PostGetDto>(post);
 
-            return Ok(postDto);
+            var response = new ApiResponse<PostGetDto>(postDto);
+            return Ok(response);
         }
 
         [HttpPost]
@@ -48,10 +51,12 @@
         {
             var post = _mapper.Map<Post>(postDto);
 
-            post.Date = DateTime.Now;
+            await _postService.InsertPost(post);
 
-            await _postRepository.InsertPost(post);
-            return Ok(post);
+            var postCreated = _mapper.Map<PostGetDto>(post);
+
+            var response = new ApiResponse<PostGetDto>(postCreated);
+            return Ok(response);
         }
 
         [HttpPut("{id}")]
@@ -64,15 +69,19 @@
 
             var post = _mapper.Map<Post>(postDto);
 
-            var result = await _postRepository.UpdatePost(post);
-            return Ok(result);
+            var result = await _postService.UpdatePost(post);
+
+            var response = new ApiResponse<bool>(result);
+            return Ok(response);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _postRepository.DeletePost(id);
-            return Ok(result);
+            var result = await _postService.DeletePost(id);
+
+            var response = new ApiResponse<bool>(result); 
+            return Ok(response);
         }
     }
 }

@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "E:\\C#\\aws\\AwsSocialMedia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{985A9AB0-A4D5-08BF-E69F-527A663A220A}|AwsSocialMedia.Api\\AwsSocialMedia.Api.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985A9AB0-A4D5-08BF-E69F-527A663A220A}|AwsSocialMedia.Api\\AwsSocialMedia.Api.csproj|solutionrelative:awssocialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.insfrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|solutionrelative:awssocialmedia.insfrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985A9AB0-A4D5-08BF-E69F-527A663A220A}|AwsSocialMedia.Api\\AwsSocialMedia.Api.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985A9AB0-A4D5-08BF-E69F-527A663A220A}|AwsSocialMedia.Api\\AwsSocialMedia.Api.csproj|solutionrelative:awssocialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.insfrastructure\\validators\\postupdatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|solutionrelative:awssocialmedia.insfrastructure\\validators\\postupdatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.insfrastructure\\validators\\postcreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{357A9887-8A44-E1D3-5F45-01A6DD413BEA}|AwsSocialMedia.Insfrastructure\\AwsSocialMedia.Insfrastructure.csproj|solutionrelative:awssocialmedia.insfrastructure\\validators\\postcreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|solutionrelative:awssocialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.core\\dtos\\postgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|solutionrelative:awssocialmedia.core\\dtos\\postgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|e:\\c#\\aws\\awssocialmedia\\awssocialmedia.core\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{245872A5-AC78-25C6-DE3C-074E630BB4B6}|AwsSocialMedia.Core\\AwsSocialMedia.Core.csproj|solutionrelative:awssocialmedia.core\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Api\\Program.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Api\\Program.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Api\\Program.cs",
-              "RelativeToolTip": "AwsSocialMedia.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T19:49:20.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PostUpdateDtoValidator.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Validators\\PostUpdateDtoValidator.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Insfrastructure\\Validators\\PostUpdateDtoValidator.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Validators\\PostUpdateDtoValidator.cs",
-              "RelativeToolTip": "AwsSocialMedia.Insfrastructure\\Validators\\PostUpdateDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T19:45:31.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
-              "RelativeToolTip": "AwsSocialMedia.Insfrastructure\\Repositories\\PostRepository.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T19:11:10.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPostRepository.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
-              "RelativeToolTip": "AwsSocialMedia.Core\\Interfaces\\IPostRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T19:10:45.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PostController.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Api\\Controllers\\PostController.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Api\\Controllers\\PostController.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Api\\Controllers\\PostController.cs",
-              "RelativeToolTip": "AwsSocialMedia.Api\\Controllers\\PostController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Title": "PostService.cs",
+              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "AwsSocialMedia.Core\\Services\\PostService.cs",
+              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\Services\\PostService.cs",
+              "RelativeToolTip": "AwsSocialMedia.Core\\Services\\PostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T17:08:29.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PostCreateDtoValidator.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Validators\\PostCreateDtoValidator.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Insfrastructure\\Validators\\PostCreateDtoValidator.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Insfrastructure\\Validators\\PostCreateDtoValidator.cs",
-              "RelativeToolTip": "AwsSocialMedia.Insfrastructure\\Validators\\PostCreateDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T17:19:44.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PostGetDto.cs",
-              "DocumentMoniker": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\DTOs\\PostGetDto.cs",
-              "RelativeDocumentMoniker": "AwsSocialMedia.Core\\DTOs\\PostGetDto.cs",
-              "ToolTip": "E:\\C#\\aws\\AwsSocialMedia\\AwsSocialMedia.Core\\DTOs\\PostGetDto.cs",
-              "RelativeToolTip": "AwsSocialMedia.Core\\DTOs\\PostGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T17:11:01.325Z",
+              "WhenOpened": "2026-02-02T02:48:04.256Z",
               "EditorCaption": ""
             }
           ]

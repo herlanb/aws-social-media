@@ -1,4 +1,5 @@
 using AwsSocialMedia.Core.Interfaces;
+using AwsSocialMedia.Core.Services;
 using AwsSocialMedia.Insfrastructure.Data;
 using AwsSocialMedia.Insfrastructure.Repositories;
 using AwsSocialMedia.Insfrastructure.Validators;
@@ -33,6 +34,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IPostRepository, PostRepository>();
+builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
