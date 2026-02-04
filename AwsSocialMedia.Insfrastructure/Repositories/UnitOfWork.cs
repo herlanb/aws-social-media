@@ -4,34 +4,46 @@ namespace AwsSocialMedia.Insfrastructure.Repositories
     using Core.Entities;
     using Core.Interfaces;
     using Data;
-    using System;
     using System.Threading.Tasks;
-    public class UnitOfWork : IUnitOfWork
+
+    public class UnitOfWork(AwsSocialMediaDbContext context) : IUnitOfWork
     {
-        private readonly AwsSocialMediaDbContext _context;
-        private readonly IRepository<Post> _postRepository;
-        private readonly IRepository<User> _userRepository;
-        private readonly IRepository<Comment> _commentRepository;
+        private readonly AwsSocialMediaDbContext _context = context;
+        private IPostRepository _postRepository;
+        private IRepository<User> _userRepository;
+        private IRepository<Comment> _commentRepository;
 
-        public UnitOfWork(AwsSocialMediaDbContext context)
+        public IPostRepository PostRepository
         {
-            _context = context;
+            get
+            {
+                _postRepository ??= new PostRepository(_context);
+
+                return _postRepository;
+            }
         }
-        public IRepository<Post> PostRepository => _postRepository
-                                                ?? new BaseRepository<Post>(_context);
 
-        public IRepository<User> UserRepository => _userRepository
-                                                ?? new BaseRepository<User>(_context);
+        public IRepository<User> UserRepository
+        {
+            get
+            {
+                _userRepository ??= new BaseRepository<User>(_context);
+                return _userRepository;
+            }
+        }
 
-        public IRepository<Comment> CommentRepository => _commentRepository
-                                                      ?? new BaseRepository<Comment>(_context);
+        public IRepository<Comment> CommentRepository
+        {
+            get
+            {
+                _commentRepository ??= new BaseRepository<Comment>(_context);
+                return _commentRepository;
+            }
+        }
 
         public void Dispose()
         {
-            if (_context != null) 
-            {
-                _context.Dispose();
-            }
+            _context?.Dispose();
         }
 
         public void SaveChanges()

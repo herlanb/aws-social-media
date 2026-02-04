@@ -1,5 +1,4 @@
-﻿
-namespace AwsSocialMedia.Core.DTOs
+﻿namespace AwsSocialMedia.Core.DTOs
 {
     public class PostUpdateDto
     {

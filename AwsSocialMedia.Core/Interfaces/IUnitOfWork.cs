@@ -5,7 +5,7 @@
 
     public interface IUnitOfWork : IDisposable
     {
-        IRepository<Post> PostRepository { get; }
+        IPostRepository PostRepository { get; }
         IRepository<User> UserRepository { get; }
         IRepository<Comment> CommentRepository { get; }
         void SaveChanges();

@@ -1,18 +1,19 @@
 ﻿namespace AwsSocialMedia.Api.Controllers
 {
     using AutoMapper;
-    using Response;
     using Core.DTOs;
     using Core.Entities;
+    using Core.Exceptions;
     using Core.Interfaces;
     using Microsoft.AspNetCore.Mvc;
+    using Response;
 
     [Route("api/[controller]")]
     [ApiController]
     public class PostController : ControllerBase
     {
         private readonly IPostService _postService;
-        private readonly IMapper _mapper;  
+        private readonly IMapper _mapper;
 
         public PostController(IPostService postService, IMapper mapper)
         {
@@ -23,7 +24,7 @@
         [HttpGet]
         public async Task<IActionResult> GetPosts()
         {
-            var posts = await _postService.GetPosts();
+            var posts = _postService.GetPosts();
             var postsDto = _mapper.Map<IEnumerable<PostGetDto>>(posts);
 
             var response = new ApiResponse<IEnumerable<PostGetDto>>(postsDto);
@@ -34,11 +35,6 @@
         public async Task<IActionResult> GetPost(int id)
         {
             var post = await _postService.GetPost(id);
-
-            if (post == null)
-            {
-                return NotFound(new { Message = $"Post con ID {id} no encontrado" });
-            }
 
             var postDto = _mapper.Map<PostGetDto>(post);
 
@@ -64,7 +60,7 @@
         {
             if (id != postDto.PostId)
             {
-                return BadRequest(new { Message = "El ID de la ruta no coincide con el del body" });
+                throw new BusinessException("El ID de la ruta no coincide con el del body");
             }
 
             var post = _mapper.Map<Post>(postDto);
@@ -79,9 +75,8 @@
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _postService.DeletePost(id);
-
-            var response = new ApiResponse<bool>(result); 
-            return Ok(response);
+            _ = new ApiResponse<bool>(result);
+            return NoContent();
         }
     }
 }

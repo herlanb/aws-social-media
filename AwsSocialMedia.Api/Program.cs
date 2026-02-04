@@ -1,6 +1,7 @@
 using AwsSocialMedia.Core.Interfaces;
 using AwsSocialMedia.Core.Services;
 using AwsSocialMedia.Insfrastructure.Data;
+using AwsSocialMedia.Insfrastructure.Filters;
 using AwsSocialMedia.Insfrastructure.Repositories;
 using AwsSocialMedia.Insfrastructure.Validators;
 using FluentValidation;
@@ -11,12 +12,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.ReferenceHandler =
-            System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-    });
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<GlobalExceptionFIlter>();
+
+}).AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler =
+    System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+});
 
 builder.Services.AddValidatorsFromAssemblyContaining<PostCreateDtoValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<PostUpdateDtoValidator>();

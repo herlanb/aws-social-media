@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AwsSocialMedia.Insfrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+022593117d6f21762a44b1e88806bf5a1ab9fe1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9699e50a53d12337b164cc116aaef6d200575a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AwsSocialMedia.Insfrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AwsSocialMedia.Insfrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

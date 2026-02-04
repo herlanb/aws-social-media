@@ -1,12 +1,7 @@
 ﻿namespace AwsSocialMedia.Api.Response
 {
-    public class ApiResponse<T>
+    public class ApiResponse<T>(T data)
     {
-        public ApiResponse(T data)
-        {
-            Data = data;
-        }
-
-        public T Data { get; set; }
+        public T Data { get; set; } = data;
     }
 }
